@@ -59,10 +59,4 @@ hr {
   margin-right: 2em;
   font-size: var(--font-size-st-xs);
 }
-
-.container {
-  margin: 0 auto;
-  max-width: 1344px;
-  text-align: center;
-}
 </style>
