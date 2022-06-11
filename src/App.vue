@@ -1,10 +1,12 @@
 <template>
-  <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/about">About</RouterLink>
-  </nav>
-  <RouterView />
+  <Navigation />
+  <router-view />
 </template>
+
+<script setup>
+import Navigation from './components/Navigation.vue'
+
+</script>
 
 <style>
 @import '@/assets/base.css';
