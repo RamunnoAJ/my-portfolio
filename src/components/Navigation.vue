@@ -14,9 +14,6 @@
         <li>
           <router-link class="link" :to="{ name: '' }">Projects</router-link>
         </li>
-        <li>
-          <router-link class="link" :to="{ name: '' }">Contact me</router-link>
-        </li>
       </ul>
       <div class="icon" @click="toggleMobileNav" v-show="mobile">
         <div class="hamburger">
@@ -35,9 +32,6 @@
           </li>
           <li>
             <router-link class="link" :to="{ name: '' }">Projects</router-link>
-          </li>
-          <li>
-            <router-link class="link" :to="{ name: '' }">Contact me</router-link>
           </li>
         </ul>
       </transition>
