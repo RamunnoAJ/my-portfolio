@@ -1,53 +1,72 @@
-/* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+  font-size: 10px;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+  /* ================================
+           COLORS
+    m      = modified
+    l      = light
+    d      = dark
+===================================== */
 
-  --vt-c-indigo: #2c3e50;
+  --color-primary: #42b883;
+  --color-secondary: #185e3e;
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+  --color-background: #181818;
+  --color-text: rgba(235, 235, 235, 0.64);
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-}
+  /* ================================
+           PADDING
+      xl      = extra large
+      l       = large
+      m       = medium
+      s       = small
+      xs      = extra small
 
-/* semantic color variables for this project */
-:root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+      h       = horizontal (left & right)
+      v       = vertical (top & bottom)
+===================================== */
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
+  --padding-xl-h: calc(3rem + 6vw);
+  --padding-xl-v: calc(3rem + 6vh);
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --padding-l-h: calc(3rem + 3vw);
+  --padding-l-v: calc(3rem + 3vh);
 
-  --section-gap: 160px;
-}
+  --padding-m-h: calc(2rem + 2vw);
+  --padding-m-v: calc(2rem + 2vh);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --color-background-soft: var(--vt-c-black-soft);
-    --color-background-mute: var(--vt-c-black-mute);
+  --padding-s-h: calc(1rem + 2vw);
+  --padding-s-v: calc(1rem + 2vh);
 
-    --color-border: var(--vt-c-divider-dark-2);
-    --color-border-hover: var(--vt-c-divider-dark-1);
+  --padding-xs-h: calc(0.5rem + 1vw);
+  --padding-xs-v: calc(0.5rem + 1vh);
 
-    --color-heading: var(--vt-c-text-dark-1);
-    --color-text: var(--vt-c-text-dark-2);
-  }
+  --padding-xxs-h: calc(0.5rem + 0.5vw);
+  --padding-xxs-v: calc(0.5rem + 0.5vh);
+
+  /* ================================
+           PADDING
+    xl    = extra large
+    l     = large
+    m     = medium
+    s     = small
+    xs    = extra small
+
+    d     = dynamic
+    st    = static
+===================================== */
+
+  --font-size-d-xl: calc(3rem + 3vw);
+  --font-size-d-l: calc(2rem + 2vw);
+  --font-size-d-m: calc(1rem + 2vw);
+  --font-size-d-s: calc(1rem + 1vw);
+  --font-size-d-xs: calc(1rem + 0.5vw);
+  --font-size-d-xxs: calc(0.5rem + 0.5vw);
+
+  --font-size-st-l: 3rem;
+  --font-size-st-m: 2rem;
+  --font-size-st-s: 1.5rem;
+  --font-size-st-xs: 1rem;
 }
 
 *,
@@ -65,9 +84,9 @@ body {
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
   line-height: 1.6;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
