@@ -2,7 +2,7 @@
   <header :class="{ 'scrolled-nav': scrollNav }">
     <nav>
       <div class="branding">
-        <img src="/logo.png" alt="">
+        <img src="/logo.png" alt="logo image">
       </div>
       <ul class="navigation">
         <li>
@@ -13,9 +13,6 @@
         </li>
         <li>
           <router-link class="link" :to="{ name: '' }">Projects</router-link>
-        </li>
-        <li>
-          <router-link class="link" :to="{ name: '' }">Contact me</router-link>
         </li>
       </ul>
       <div class="icon" @click="toggleMobileNav" v-show="mobile">
@@ -35,9 +32,6 @@
           </li>
           <li>
             <router-link class="link" :to="{ name: '' }">Projects</router-link>
-          </li>
-          <li>
-            <router-link class="link" :to="{ name: '' }">Contact me</router-link>
           </li>
         </ul>
       </transition>
@@ -96,7 +90,7 @@ header {
   position: fixed;
   transition: 0.5s ease all;
   color: #fff;
-  padding-block: 1em;
+  padding-block: var(--padding-s-v);
   z-index: 2;
   transition: 0.5s ease all;
 }
@@ -105,7 +99,7 @@ header nav {
   position: relative;
   display: flex;
   flex-direction: row;
-  padding: 12px 0;
+  padding: var(--padding-xxs-v) 0;
   transition: 0.5 ease all;
   width: 90%;
   margin: 0 auto;
@@ -120,31 +114,32 @@ header nav {
 header nav ul,
 header nav .link {
   font-weight: 500;
-  color: #42b883;
+  color: var(--color-primary);
   list-style: none;
   text-decoration: none;
 }
 
 header nav li {
   text-transform: uppercase;
-  padding: 16px;
-  margin-left: 16px;
+  padding: var(--padding-xxs-v) var(--padding-s-h);
+  margin-left: var(--padding-xxs-h);
 }
 
 .link {
-  font-size: 14px;
+  font-size: var(--font-size-st-s);
   transition: 0.5s ease all;
   padding-bottom: 4px;
   border-bottom: 1px solid transparent;
 }
 
 .link:hover {
-  border-color: #42b883;
+  border-color: var(--color-primary);
 }
 
 .branding {
   display: flex;
   align-items: center;
+  margin-right: var(--padding-xxs-h);
 }
 
 .branding img {
@@ -185,7 +180,7 @@ header nav li {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background: #42b883;
+  background: var(--color-primary);
   border-radius: 3px;
 }
 
