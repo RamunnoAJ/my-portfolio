@@ -216,6 +216,15 @@ header nav li {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
+.mobile-nav-enter-from {
+  opacity: 1;
+  transform: translateY(-50px);
+}
+
+.mobile-nav-enter-active {
+  transition: all 0.5s ease;
+}
+
 @media (max-width: 800px) {
   .navigation {
     display: none;
