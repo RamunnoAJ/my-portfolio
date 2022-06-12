@@ -67,6 +67,7 @@
   --font-size-d-xs: calc(1rem + 0.5vw);
   --font-size-d-xxs: calc(0.5rem + 0.5vw);
 
+  --font-size-st-xl: 4rem;
   --font-size-st-l: 3rem;
   --font-size-st-m: 2rem;
   --font-size-st-s: 1.5rem;
