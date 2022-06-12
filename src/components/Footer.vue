@@ -9,7 +9,8 @@
           <a href="https://github.com/RamunnoAJ" target="_blank"><i class="fa-brands fa-github"></i></a>
           <a href="https://www.linkedin.com/in/aramunno-frontend-vue/" target="_blank"><i
               class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/agustinram1/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSKkkFTWjrCdHDDfTvwcLcLwSMRXCZsDWHtnHRcMjqMPbVfhjZQFpmRlpVchTNQWFLrwsLbV"
+            target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
       <hr>
