@@ -11,14 +11,14 @@
           A little <span>about me</span>
         </h1>
         <p>I'm a front-end developer with a hard focus on the simplicity of Vue.js and its libraries. <br>
-          I'm from Argentina and of course I love <a
+          I'm from Argentina and of course, I love <a
             href="https://www.google.com/search?q=empanadas&client=opera-gx&sxsrf=ALiCzsYQXhWznk3beaJIyhKhiTYwsy-QAg:1655057035943&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjDgtf1v6j4AhWJspUCHd8GA-sQ_AUoAnoECAMQBA&biw=1879&bih=949&dpr=1#"
             target="_blank">empanadas</a> with the company of a good glass of <a
             href="https://www.google.com/search?q=Fernet+con+coca&tbm=isch&ved=2ahUKEwjc5-qHwKj4AhU1jZUCHQ5_BjUQ2-cCegQIABAA&oq=Fernet+con+coca&gs_lcp=CgNpbWcQAzIICAAQgAQQsQMyCwgAEIAEELEDEIMBMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAELEDEEM6BAgAEEM6CAgAELEDEIMBOgQIABADUOMHWOESYKsUaABwAHgAgAFWiAH5CJIBAjE2mAEAoAEBqgELZ3dzLXdpei1pbWfAAQE&sclient=img&ei=siqmYtxGtZrWxA-O_pmoAw&bih=949&biw=1879&client=opera-gx"
             target="_blank">fernet with cola.</a>
           <br>
           I love playing basketball and watching the NBA, I'm a huge fan of Kobe, his mamba mentality inspired me to
-          do what I really want to.
+          do what I want.
         </p>
       </div>
     </div>
