@@ -1,12 +1,14 @@
 <template>
-  <section class="hero is-fullheight">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">Agustin Ramunno</h1>
-        <h2 class="subtitle">Vue.js Developer</h2>
+  <transition name="fade" appear>
+    <section class="hero is-fullheight">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">Agustin Ramunno</h1>
+          <h2 class="subtitle">Vue.js Developer</h2>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </transition>
 </template>
 
 <style scoped>
@@ -32,4 +34,19 @@
 .container {
   text-align: left;
 }
+
+/* .fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-to,
+.fade-leave-from {
+  opacity: 1;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 1s linear;
+} */
 </style>
