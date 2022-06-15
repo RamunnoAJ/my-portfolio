@@ -3,7 +3,7 @@
     <div class="columns is-flex-direction-row-reverse is-align-items-center fade-in">
       <div class="column">
         <figure class="image is-square">
-          <img src="../assets/foto carnet.jpg" class="is-rounded">
+          <img src="../assets/photo-of-me.png" class="is-rounded">
         </figure>
       </div>
       <div class="column is-two-thirds">
