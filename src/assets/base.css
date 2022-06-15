@@ -74,6 +74,10 @@
   --font-size-st-xs: 1rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 *,
 *::before,
 *::after {
