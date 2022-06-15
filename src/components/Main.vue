@@ -4,10 +4,22 @@
       <div class="container">
         <h1 class="title">Agustin Ramunno</h1>
         <h2 class="subtitle">Vue.js Developer</h2>
+        <button type="button" @click="downloadFile" class="button-main"><iframe id="invisible"
+            style="display:none;"></iframe>Download
+          CV</button>
+        <button type="button" class="button-main button-main-2"><a href="https://github.com/RamunnoAJ"
+            target="_blank">See my work <i class="fa-brands fa-github"></i></a></button>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+const downloadFile = () => {
+  const iframe = document.querySelector('#invisible')
+  iframe.src = ''
+}
+</script>
 
 <style scoped>
 .hero {
@@ -33,5 +45,55 @@
 
 .container {
   text-align: left;
+}
+
+.button-main {
+  min-width: 130px;
+  height: 40px;
+  color: var(--color-terciary);
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--color-primary);
+  margin: var(--padding-xs-v) var(--padding-xxs-h);
+}
+
+.button-main-2 {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+}
+
+.button-main:hover {
+  border-radius: 5px;
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+.button-main:hover::after {
+  opacity: 1;
+  right: 10px;
+}
+
+.button-main::after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 20px;
+  line-height: 40px;
+  top: 0;
+  right: -20px;
+  transition: 0.4s;
+}
+
+a {
+  color: var(--color-terciary);
+  font-weight: bold;
 }
 </style>
