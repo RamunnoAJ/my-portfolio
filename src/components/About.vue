@@ -113,6 +113,14 @@ onUnmounted(() => {
   transform: scale(0.8);
 }
 
+a {
+  color: var(--color-primary);
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
 .container {
   margin-top: var(--padding-xl-v);
   margin-inline: auto;

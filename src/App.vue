@@ -14,10 +14,8 @@ import Footer from './components/Footer.vue';
 <style>
 @import '@/assets/base.css';
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
 }
 
