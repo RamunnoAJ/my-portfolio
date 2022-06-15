@@ -1,14 +1,12 @@
 <template>
-  <transition name="fade" appear>
-    <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">Agustin Ramunno</h1>
-          <h2 class="subtitle">Vue.js Developer</h2>
-        </div>
+  <section class="hero is-fullheight">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">Agustin Ramunno</h1>
+        <h2 class="subtitle">Vue.js Developer</h2>
       </div>
-    </section>
-  </transition>
+    </div>
+  </section>
 </template>
 
 <style scoped>
@@ -16,6 +14,8 @@
   background-image: url('../assets/background.jpg');
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .title {
@@ -34,19 +34,4 @@
 .container {
   text-align: left;
 }
-
-/* .fade-enter-from,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.fade-enter-to,
-.fade-leave-from {
-  opacity: 1;
-}
-
-.fade-enter-active,
-.fade-leave-active {
-  transition: all 1s linear;
-} */
 </style>
