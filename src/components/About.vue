@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <div class="columns is-flex-direction-row-reverse is-align-items-center">
+    <div class="columns is-flex-direction-row-reverse is-align-items-center fade-in">
       <div class="column">
         <figure class="image is-square">
           <img src="../assets/foto carnet.jpg" class="is-rounded">
@@ -24,7 +24,7 @@
     </div>
     <div class="skills section">
       <h1 class="title">The tools I use are:</h1>
-      <div class="section">
+      <div class="section fade-in">
         <ul class="tools">
           <li>
             <figure class="image is-128x128"><img src="../assets/icons/JavaScript.svg" alt=""></figure>
@@ -68,13 +68,51 @@
           </li>
         </ul>
       </div>
-
     </div>
-
   </section>
 </template>
 
+<script setup>
+import { onMounted, onUnmounted } from 'vue';
+
+const handleScroll = (e) => {
+  for (let i = 0; i < fadeInElements.length; i++) {
+    let elem = fadeInElements[i]
+    if (isElemVisible(elem)) {
+      elem.style.opacity = '1'
+      elem.style.transform = 'scale(1)'
+      fadeInElements.splice(i, 1)
+    }
+  }
+}
+
+const isElemVisible = (el) => {
+  const rect = el.getBoundingClientRect()
+  let elemTop = rect.top + 200
+  let elemBottom = rect.bottom
+  return elemTop < window.innerHeight && elemBottom >= 0
+}
+
+let fadeInElements = []
+
+onMounted(() => {
+  fadeInElements = Array.from(document.getElementsByClassName('fade-in'))
+  document.addEventListener('scroll', handleScroll)
+  handleScroll()
+})
+
+onUnmounted(() => {
+  document.removeEventListener('scroll', handleScroll)
+})
+</script>
+
 <style scoped>
+.fade-in {
+  opacity: 0;
+  transition: 1s all ease-out;
+  transform: scale(0.8);
+}
+
 .container {
   margin-top: var(--padding-xl-v);
   margin-inline: auto;

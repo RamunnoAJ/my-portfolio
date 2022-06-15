@@ -1,10 +1,10 @@
 <template>
   <section class="container section">
-    <h1 class="title">My Projects:</h1>
-    <div class="website-card card-1">
+    <h1 class="title" ref="navigation-projects">My Projects:</h1>
+    <div class="website-card card-1 fade-in">
       <div class="inner">
         <h2 class="title">Ramunno & Asociados</h2>
-        <p>An app designed for a lawyer bussiness, an online resource to connect to a law firm in the city. <br>
+        <p>Website designed for lawyer bussiness, an online resource to contact with a law firm in the city. <br>
           • HTML - CSS - JavaScript</p>
         <ul>
           <li>
@@ -25,7 +25,7 @@
       </div>
     </div>
 
-    <div class="website-card card-2">
+    <div class="website-card card-2 fade-in-2">
       <div class="inner">
         <h2 class="title">Tequierumi</h2>
         <p>An in develop e-commerce site created for selling crochet fabrics of little figures.<br>
@@ -49,7 +49,7 @@
       </div>
     </div>
 
-    <div class="website-card card-3">
+    <div class="website-card card-3 fade-in">
       <div class="inner">
         <h2 class="title">Personal portfolio</h2>
         <p>My personal portfolio, featuring information about me and some projects I've worked on.<br>
@@ -75,6 +75,56 @@
   </section>
 </template>
 
+<script setup>
+import { onMounted, onUnmounted } from 'vue';
+
+const handleScroll = (e) => {
+  for (let i = 0; i < fadeInElements.length; i++) {
+    let elem = fadeInElements[i]
+    if (isElemVisible(elem)) {
+      elem.style.opacity = '1'
+      elem.style.transform = 'scale(1)'
+      elem.style.transform = 'translateX(0)'
+      fadeInElements.splice(i, 1)
+    }
+  }
+}
+const handleScroll2 = (e) => {
+  for (let i = 0; i < fadeInElements2.length; i++) {
+    let elem = fadeInElements2[i]
+    if (isElemVisible(elem)) {
+      elem.style.opacity = '1'
+      elem.style.transform = 'scale(1)'
+      elem.style.transform = 'translateX(0)'
+      fadeInElements2.splice(i, 1)
+    }
+  }
+}
+
+const isElemVisible = (el) => {
+  const rect = el.getBoundingClientRect()
+  let elemTop = rect.top + 100
+  let elemBottom = rect.bottom
+  return elemTop < window.innerHeight && elemBottom >= 0
+}
+
+let fadeInElements = []
+let fadeInElements2 = []
+
+onMounted(() => {
+  fadeInElements = Array.from(document.getElementsByClassName('fade-in'))
+  fadeInElements2 = Array.from(document.getElementsByClassName('fade-in-2'))
+  document.addEventListener('scroll', handleScroll)
+  document.addEventListener('scroll', handleScroll2)
+  handleScroll2()
+  handleScroll()
+})
+
+onUnmounted(() => {
+  document.removeEventListener('scroll', handleScroll)
+})
+</script>
+
 <style scoped>
 .container {
   margin-top: var(--padding-l-v);
@@ -85,6 +135,20 @@
   color: var(--color-secondary);
   font-size: var(--font-size-d-l);
   text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: 1.5s all ease-out;
+  transform: scale(0.8);
+  transform: translateX(-500px);
+}
+
+.fade-in-2 {
+  opacity: 0;
+  transition: 1.5s all ease-out;
+  transform: scale(0.8);
+  transform: translateX(500px);
 }
 
 .website-card {
@@ -124,7 +188,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--color-background);
+  background: rgba(24, 24, 24, 0.9);
   box-sizing: border-box;
   padding: var(--padding-s-v) var(--padding-s-h);
   border-radius: 10px;
