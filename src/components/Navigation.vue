@@ -70,7 +70,6 @@ const updatedScroll = () => {
   scrollNav.value = false
 }
 
-
 const checkScreen = () => {
   windowWidth.value = window.innerWidth
   if (windowWidth.value <= 800) {
