@@ -4,22 +4,16 @@
       <div class="container">
         <h1 class="title">Agustin Ramunno</h1>
         <h2 class="subtitle">Vue.js Developer</h2>
-        <button type="button" @click="downloadFile" class="button-main"><iframe id="invisible"
-            style="display:none;"></iframe>Download
-          CV</button>
+        <a href="../assets/agustin-ramunno-resume.pdf" download="Agustin Ramunno Resume.pdf">
+          <button type="button" class="button-main">Download
+            CV</button>
+        </a>
         <button type="button" class="button-main button-main-2"><a href="https://github.com/RamunnoAJ"
             target="_blank">See my work <i class="fa-brands fa-github"></i></a></button>
       </div>
     </div>
   </section>
 </template>
-
-<script setup>
-const downloadFile = () => {
-  const iframe = document.querySelector('#invisible')
-  iframe.src = ''
-}
-</script>
 
 <style scoped>
 .hero {
