@@ -30,6 +30,9 @@
       v       = vertical (top & bottom)
 ===================================== */
 
+  --padding-xxl-h: calc(4rem + 6vw);
+  --padding-xxl-v: calc(4rem + 6vh);
+
   --padding-xl-h: calc(3rem + 6vw);
   --padding-xl-v: calc(3rem + 6vh);
 
