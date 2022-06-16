@@ -6,13 +6,13 @@
       </div>
       <ul class="navigation">
         <li>
-          <router-link class="link" :to="{ name: '' }">Home</router-link>
+          <router-link class="link" :to="{ name: 'home' }">Home</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">About me</router-link>
+          <router-link class="link" :to="{ name: 'about' }">About me</router-link>
         </li>
         <li>
-          <router-link class="link" :to="{ name: '' }">Projects</router-link>
+          <router-link class="link" :to="{ name: 'projects' }">Projects</router-link>
         </li>
       </ul>
       <div class="icon" @click="toggleMobileNav" v-show="mobile">
@@ -25,13 +25,13 @@
       <transition name="mobile-nav">
         <ul v-show="mobileNav" class="dropdown-nav">
           <li>
-            <router-link class="link" :to="{ name: '' }">Home</router-link>
+            <router-link class="link" :to="{ name: 'home' }">Home</router-link>
           </li>
           <li>
-            <router-link class="link" :to="{ name: '' }">About me</router-link>
+            <router-link class="link" :to="{ name: 'about' }">About me</router-link>
           </li>
           <li>
-            <router-link class="link" :to="{ name: '' }">Projects</router-link>
+            <router-link class="link" :to="{ name: 'projects' }">Projects</router-link>
           </li>
         </ul>
       </transition>
