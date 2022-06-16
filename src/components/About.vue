@@ -35,7 +35,7 @@
             <p>Vue.js</p>
           </li>
           <li>
-            <figure class="image is-128x128"><img src="../assets/icons/git.svg" alt=""></figure>
+            <figure class="image is-128x128"><img src="../assets/icons/Git.svg" alt=""></figure>
             <p>Git</p>
           </li>
           <li>
