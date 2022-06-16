@@ -31,7 +31,7 @@
             <p>JavaScript</p>
           </li>
           <li>
-            <figure class="image is-128x128"><img src="../assets/icons/vuejs.svg" alt=""></figure>
+            <figure class="image is-128x128"><img src="../assets/icons/Vuejs.svg" alt=""></figure>
             <p>Vue.js</p>
           </li>
           <li>
