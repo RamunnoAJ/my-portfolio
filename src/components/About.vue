@@ -122,7 +122,7 @@ a:hover {
 }
 
 .container {
-  margin-top: var(--padding-xl-v);
+  padding-top: var(--padding-xl-v);
   margin-inline: auto;
 }
 

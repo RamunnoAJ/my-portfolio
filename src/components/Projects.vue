@@ -1,6 +1,6 @@
 <template>
   <section class="container section">
-    <h1 class="title" ref="navigation-projects">My Projects:</h1>
+    <h1 class="title">My Projects:</h1>
     <div class="website-card card-1 fade-in">
       <div class="inner">
         <h2 class="title">Ramunno & Asociados</h2>
@@ -127,7 +127,7 @@ onUnmounted(() => {
 
 <style scoped>
 .container {
-  margin-top: var(--padding-l-v);
+  padding-top: var(--padding-xxl-v);
   margin-inline: auto;
 }
 
@@ -235,5 +235,10 @@ li {
   p {
     font-size: var(--font-size-d-xs);
   }
+
+  .container {
+    padding-top: var(--padding-l-v);
+  }
+
 }
 </style>
