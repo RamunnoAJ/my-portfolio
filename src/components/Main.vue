@@ -4,7 +4,7 @@
       <div class="container">
         <h1 class="title">Agustin Ramunno</h1>
         <h2 class="subtitle">Vue.js Developer</h2>
-        <a href="https://www.mediafire.com/file/grjypqjq5z7k3yo/agustin-ramunno-resume.pdf/file" target="_blank">
+        <a href="../assets/agustin-ramunno-resume.pdf" target="_blank">
           <button type="button" class="button-main">Download
             CV</button>
         </a>
